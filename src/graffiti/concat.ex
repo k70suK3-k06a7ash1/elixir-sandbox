@@ -1,13 +1,7 @@
-concat = fn a,b ->
-  if a == "" do
-    b
-  else
-    if b === "" do
-      a
-    else
-      a <> " " <> b
-    end
-  end
+concat = fn
+   a, "" -> a
+   "", b -> b
+   a,b ->  a <> " " <> b
 end
 
 result1 = concat.("","")
