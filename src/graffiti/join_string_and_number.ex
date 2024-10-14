@@ -8,6 +8,7 @@ defmodule Main do
     [b, c] = input
     |> String.trim()
     |> String.split()
+    # string to number
     |> Enum.map(&String.to_integer/1)
 
     # 文字列の入力
