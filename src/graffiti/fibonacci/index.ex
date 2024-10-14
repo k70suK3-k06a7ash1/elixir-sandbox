@@ -6,5 +6,4 @@ defmodule Fibonacci do
   end
 end
 
-# 使用例
 IO.puts Fibonacci.fib(30)
