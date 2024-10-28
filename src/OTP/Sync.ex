@@ -10,4 +10,9 @@ defmodule Sync do
     state = state + 1 # カウントアップ
     {:reply, "カウントアップ： #{inspect state}", state}
   end
+
+  def handle_call(:down, from, state) do
+    state = state - 1
+    {:reply, "カウントダウン： #{inspect state}", state}
+  end
 end
