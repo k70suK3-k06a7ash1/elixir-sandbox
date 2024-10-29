@@ -22,8 +22,8 @@ defmodule Fetcher.MixProject do
   defp deps do
     [
       {:req, "~> 0.5.5"},
-       {:tesla, "~> 1.13.0"},
-        {:finch, "~> 0.19"}
+      {:tesla, "~> 1.13.0"},
+      {:finch, "~> 0.19"}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
