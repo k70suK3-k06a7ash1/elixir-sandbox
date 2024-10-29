@@ -12,7 +12,7 @@ defmodule GitHubClient do
     headers = [
       {"User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; NP06; rv:11.0)"},
     ]
-    |> Enum.reject(fn {_, value} -> is_nil(value) end) #if access_token, do: [{"Authorization", "Bearer #{access_token}"}], else: []
+    |> Enum.reject(fn {_, value} -> is_nil(value) end)
 
     # リクエストURL
     url = "#{@base_url}/repos/k70suK3-k06a7ash1/elixir-sandbox/commits"
