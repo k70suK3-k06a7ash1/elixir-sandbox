@@ -3,7 +3,12 @@
 **TODO: Add description**
 
 ```bash
+
+# Req Client
 mix run -e "GitHub.fetch_commits"
+
+# Tesla Client
+mix run -e "GitHubClient.fetch_commits"
 ```
 ## Installation
 
